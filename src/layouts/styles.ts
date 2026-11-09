@@ -17,16 +17,3 @@ export const AppContainer = styled.div`
 		text-align: center;
 	}
 `
-
-export const WifiContainer = styled.span<{$online: boolean}>`
-  border-radius: 24px;
-  padding: 8px;
-  font-size: 12px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background-color: ${({ $online }) => $online? "var(--activeGreen20)" : "var(--warningYellow20)"};
-  border: 2px solid ${({ $online }) => $online ? "var(--activeGreen)" : "var(--warningYellow)"};
-  color: ${({ $online }) => $online ? "var(--activeGreen)" : "var(--warningYellow)"};
-`

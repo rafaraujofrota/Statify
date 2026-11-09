@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
 
 	:root {
 		--accentColor20: color-mix(in srgb, var(--accentColor) 20%, transparent);
-		--darkGray: #262E35;
 		--activeGreen: #41C16D;
 		--activeGreen20: color-mix(in srgb, var(--activeGreen) 20%, transparent);
 		--warningYellow: #D37A1E;
@@ -28,6 +27,7 @@ export const GlobalStyle = createGlobalStyle`
 		color-scheme: light;
 
 		--accentColor: #105AC1;
+		--darkGray: lightgray;
 		--background: #F1F5F9;
 		--backgroundLight: #FFFFFF;
 	}
@@ -38,6 +38,7 @@ export const GlobalStyle = createGlobalStyle`
 
 			--accentColor: #90A1B9;
 			--background: #020617;
+			--darkGray: #262E35;
 			--backgroundLight: #0E162A;
 		}
 	}

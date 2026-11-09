@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom"
 import Sidebar from "../components/Sidebar"
 
-import { AppContainer, WifiContainer } from "./styles"
+import { AppContainer } from "./styles"
 import { useState, useEffect } from "react";
 
 import { MdOutlineWifi, MdOutlineWifiOff } from "react-icons/md";
+
+import InfoTag from "../components/InfoTag";
 
 export default function DashboardLayout() {
   const [online, setOnline] = useState(navigator.onLine);
@@ -38,10 +40,12 @@ export default function DashboardLayout() {
         <footer>
           <p>STATIFY - Versão 1.0 </p>
           <div style={{flex: 1}}></div>
-          <WifiContainer $online={online}>
-            {online ? (<MdOutlineWifi size={16}/>) : (<MdOutlineWifiOff size={16}/>)}
+          <InfoTag 
+            color={online ? "var(--activeGreen)" : "var(--warningYellow)"}
+            Icon={online ? MdOutlineWifi : MdOutlineWifiOff }
+          >
             {online ? "ONLINE" : "OFFLINE"}
-          </WifiContainer>
+          </InfoTag>
         </footer>
       </AppContainer>
     </div>

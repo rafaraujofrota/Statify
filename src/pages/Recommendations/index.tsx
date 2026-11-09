@@ -1,7 +1,11 @@
+import TitleBar from "../../components/TitleBar";
+
+import { PageContainer } from "./styles";
+
 export function Recommendations() {
 	return (
-		<p>
-			Recomendações
-		</p>
+		<PageContainer>
+			<TitleBar diagnosis={100} subtitle="PRÓXIMAS AÇÕES" title="Comparações e Recomendações"/>
+		</PageContainer>
 	)
 }
