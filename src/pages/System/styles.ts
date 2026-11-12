@@ -9,6 +9,14 @@ export const PageContainer = styled.div`
       flex-direction: column;
     }
   }
+
+  .loadingContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 export const SystemContainer = styled.div`
@@ -78,5 +86,58 @@ export const BrowserContainer = styled.div`
       font-size: 14px;
       color: var(--accentColor);
     }
+  }
+`
+
+export const LocationContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+  gap: 1rem;
+
+  .infoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  h5, h6 {
+    font-weight: 500;
+    color: var(--accentColor);
+  }
+
+  span { 
+    width: 50%;
+  }
+`
+
+export const DriversContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 8px;
+
+  @media (max-width: 1400px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 810px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  > span {
+    > h5 { flex: 1; }
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    flex: 1;
+    gap: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--darkGray);
   }
 `

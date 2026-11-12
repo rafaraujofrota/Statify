@@ -6,11 +6,12 @@ interface InfoCardProps {
   Icon: IconType;
   InfoTag?: React.ReactNode;
   children: React.ReactNode;
+  style?: React.CSSProperties;
 }
 
-export default function InfoCard({ title, Icon, InfoTag, children }: InfoCardProps){
+export default function InfoCard({ title, Icon, InfoTag, children, style }: InfoCardProps){
   return(
-    <CardContainer>
+    <CardContainer style={style}>
       <div className="titleBar">
         <span className="iconBorder">
           <Icon/>
