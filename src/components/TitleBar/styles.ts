@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TitleContainer = styled.div<{$percentage: number}>`
+export const TitleContainer = styled.header<{$percentage: number}>`
   width: 100%;
 
   div {

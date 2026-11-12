@@ -43,9 +43,8 @@ export default function DashboardLayout() {
           <InfoTag 
             color={online ? "var(--activeGreen)" : "var(--warningYellow)"}
             Icon={online ? MdOutlineWifi : MdOutlineWifiOff }
-          >
-            {online ? "ONLINE" : "OFFLINE"}
-          </InfoTag>
+            text={online ? "ONLINE" : "OFFLINE"}
+          />
         </footer>
       </AppContainer>
     </div>
