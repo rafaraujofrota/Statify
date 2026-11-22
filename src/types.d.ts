@@ -5,9 +5,17 @@ interface BatteryInfo {
   level: number;
 }
 
+interface NetworkInformation {
+  effectiveType?: string;
+  downlink?: number;
+  rtt?: number;
+  saveData?: boolean;
+}
+
 interface Navigator {
   getBattery?: () => Promise<BatteryManager>;
   deviceMemory?: number | undefined;
+  connection?: NetworkInformation;
 }
 
 interface MediaTrackSettings {
