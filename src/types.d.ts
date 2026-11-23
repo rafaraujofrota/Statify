@@ -14,7 +14,7 @@ interface NetworkInformation {
 
 interface Navigator {
   getBattery?: () => Promise<BatteryManager>;
-  deviceMemory?: number | undefined;
+  deviceMemory?: number;
   connection?: NetworkInformation;
 }
 
