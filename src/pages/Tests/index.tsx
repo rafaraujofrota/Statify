@@ -49,9 +49,9 @@ export function Tests() {
   const [netResult, setNetResult] = useState<NetworkTestResult | null>(null);
 
   // Diagnóstico / Integridade Geral calculado dinamicamente
-  let diagnosisScore = 60;
-  if (benchResult) diagnosisScore += 20;
-  if (netResult) diagnosisScore += 20;
+  let diagnosisScore = 0;
+  if (benchResult) diagnosisScore += 50;
+  if (netResult) diagnosisScore += 50;
 
   async function handleStartBenchmark() {
     if (benchRunning) return;

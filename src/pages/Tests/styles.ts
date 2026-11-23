@@ -61,20 +61,19 @@ export const ActionButton = styled.button`
   justify-content: center;
   gap: 0.6rem;
   padding: 0.65rem 1.4rem;
-  border-radius: 8px;
-  border: 1px solid var(--darkGray);
-  background-color: var(--background);
-  color: CanvasText;
+  border-radius: 12px;
+  border: 0;
+  background-color: CanvasText;
+  color: Canvas;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
   &:hover:not(:disabled) {
     transform: translateY(-2px);
-    border-color: var(--accentColor);
-    box-shadow: 0 4px 12px var(--accentColor20);
+    box-shadow: 0 4px 12px var(--accentColor);
   }
 
   &:active:not(:disabled) {

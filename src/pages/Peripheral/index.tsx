@@ -152,7 +152,7 @@ function useMicVisualizer(stream: MediaStream | null, canvasRef: RefObject<HTMLC
 			const totalGap = gap * (barCount - 1);
 			const barWidth = Math.max(3, Math.floor((width - totalGap) / barCount));
 			const idleHeight = Math.max(8, Math.round(height * 0.18));
-			const bottomPadding = 6;
+			const bottomPadding = 0;
 
 			for (let i = 0; i < barCount; i++) {
 				const sampleIndex = Math.min(dataArray.length - 1, i * 2);

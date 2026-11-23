@@ -36,8 +36,8 @@ export const PageContainer = styled.div`
   width: 100%;
   min-width: 0;
   min-height: 100%;
-  background-color: rgb(11, 15, 27);
-  color: #ffffff;
+  background-color: var(--background);
+  color: CanvasText;
   font-size: 90px;
   font-weight: 900;
   border: none;
@@ -187,7 +187,7 @@ export const TestContainer = styled.div<SplitBoxProps>`
     width: 100%;
     height: 100%;
     min-height: 0;
-    background-color: rgb(11, 15, 27);
+    background-color: var(--background);
     display: flex;
     align-items: center;
     justify-content: center;
